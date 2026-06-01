@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>2012 AlexNet</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:1920px;
+    height:1080px;
+    background:#021B3A;
+    overflow:hidden;
+    font-family:'Pretendard',sans-serif;
+    color:white;
+}
+
+.slide{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+/* YEAR */
+.year{
+    position:absolute;
+    top:80px;
+    left:100px;
+
+    font-size:120px;
+    font-weight:800;
+    color:rgba(255,255,255,.08);
+}
+
+/* SMALL LABEL */
+.label{
+    position:absolute;
+    top:65px;
+    left:110px;
+
+    font-size:18px;
+    letter-spacing:8px;
+    color:#19B5FF;
+}
+
+/* TITLE */
+.title{
+    position:absolute;
+    top:110px;
+    width:100%;
+
+    text-align:center;
+
+    font-size:86px;
+    font-weight:800;
+    line-height:1.15;
+}
+
+/* SUB TITLE */
+.sub{
+    position:absolute;
+    top:220px;
+    width:100%;
+
+    text-align:center;
+
+    font-size:28px;
+    letter-spacing:12px;
+    color:#19B5FF;
+    font-weight:600;
+}
+
+/* VIDEO FRAME */
+.video-wrap{
+    position:absolute;
+    left:50%;
+    top:320px;
+
+    transform:translateX(-50%);
+
+    width:1280px;
+    height:720px;
+
+    border-radius:28px;
+    overflow:hidden;
+
+    border:1px solid rgba(25,181,255,.18);
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,.03),
+        0 30px 80px rgba(0,0,0,.35);
+}
+
+/* VIDEO PLACEHOLDER */
+.video{
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.03),
+    rgba(255,255,255,.01)
+    );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:48px;
+    color:rgba(255,255,255,.25);
+}
+
+/* WATERMARK */
+.watermark{
+    position:absolute;
+
+    top:510px;
+    left:50%;
+
+    transform:
+    translateX(-50%);
+
+    font-size:180px;
+    font-weight:800;
+
+    letter-spacing:12px;
+
+    color:rgba(255,255,255,.03);
+
+    pointer-events:none;
+}
+
+/* LEFT TIMELINE */
+.left-note{
+    position:absolute;
+    left:140px;
+    top:720px;
+
+    color:rgba(255,255,255,.45);
+
+    text-align:left;
+}
+
+.left-note .year2{
+    font-size:26px;
+    font-weight:700;
+}
+
+.left-note .txt{
+    margin-top:8px;
+    font-size:18px;
+}
+
+/* RIGHT TIMELINE */
+.right-note{
+    position:absolute;
+    right:140px;
+    top:720px;
+
+    color:rgba(255,255,255,.45);
+
+    text-align:right;
+}
+
+.right-note .year2{
+    font-size:26px;
+    font-weight:700;
+}
+
+.right-note .txt{
+    margin-top:8px;
+    font-size:18px;
+}
+
+/* QUOTE */
+.quote{
+    position:absolute;
+
+    bottom:45px;
+    width:100%;
+
+    text-align:center;
+
+    font-size:34px;
+    line-height:1.7;
+
+    color:#DDE6F0;
+}
+
+.quote strong{
+    color:#19B5FF;
+    font-weight:700;
+}
+
+/* SOURCE */
+.source{
+    position:absolute;
+    bottom:20px;
+    right:40px;
+
+    font-size:13px;
+    color:rgba(255,255,255,.25);
+}
+</style>
+</head>
+
+<body>
+
+<div class="slide">
+
+    <div class="label">DEEP LEARNING REVOLUTION</div>
+    <div class="year">2012</div>
+
+    <div class="title">
+        드디어 가능해지다
+    </div>
+
+    <div class="sub">
+        ALEXNET
+    </div>
+
+    <div class="watermark">
+        DEEP LEARNING
+    </div>
+
+    <div class="video-wrap">
+        <div class="video">
+            VIDEO
+        </div>
+    </div>
+
+    <div class="left-note">
+        <div class="year2">1986</div>
+        <div class="txt">
+            Backpropagation
+        </div>
+    </div>
+
+    <div class="right-note">
+        <div class="year2">2017</div>
+        <div class="txt">
+            Transformer
+        </div>
+    </div>
+
+    <div class="quote">
+        AI는 달라진 것이 아니었다.<br>
+        <strong>컴퓨터와 데이터가 준비된 것이다.</strong>
+    </div>
+
+    <div class="source">
+        출처 : 세상의 모든 기업 (YouTube)
+    </div>
+
+</div>
+
+</body>
+</html>
